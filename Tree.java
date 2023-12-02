@@ -85,10 +85,8 @@ public class Tree {
     }
 
     public static void postOrderTraversal(Nodeee node) {
-        if (node.left != null)
-            postOrderTraversal(node.left);
-        if (node.right != null)
-            postOrderTraversal(node.right);
+        if (node.left != null)    postOrderTraversal(node.left);
+        if (node.right != null)  postOrderTraversal(node.right);
         System.out.print("\t" + node.data);
     }
 
